@@ -10,23 +10,21 @@
   </ul>
 </div>
 <% end %>
-
+<div class="field form-group w-25">
+  <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+</div>
 <div class="field form-group w-25">
   <%= form.text_field :first_name, class:"form-control", placeholder:"First name" %>
 </div>
-
 <div class="field form-group w-25">
   <%= form.text_field :last_name, class:"form-control", placeholder:"Last name" %>
 </div>
-
 <div class="field form-group w-25">
   <%= form.text_field :email, class:"form-control", placeholder:"Enter email" %>
 </div>
-
 <div class="field form-group w-25">
   <%= form.text_field :phone, class:"form-control", placeholder:"Phone" %>
 </div>
-
 <div class="field form-group w-25">
   <%= form.text_field :twitter, class:"form-control", placeholder:"Enter twitter" %>
 </div>
@@ -34,4 +32,5 @@
 <div class="actions">
   <%= form.submit class:"btn btn-primary" %>
 </div>
+
 <% end %>
