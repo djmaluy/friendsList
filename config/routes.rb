@@ -9,5 +9,7 @@ Rails
 
     # get 'home/index'
     get 'home/about'
-    root 'home#index'
+    # root 'home#index'
+    root 'friends#index'
+
   end
